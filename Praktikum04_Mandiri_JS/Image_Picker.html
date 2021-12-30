@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </style>
+    <title>Image Picker</title>
+</head>
+<body bgcolor="grey">
+    <h1>IMAGE PICKER</h1>
+    <select name="image-select" id="image-select" ><br>
+        <option disabled selected>Select Image</option>
+        <option value="image-1">Gambar 1</option>
+        <option value="image-2">Gambar 2</option>
+        <option value="image-3">Gambar 3</option>
+        <option value="image-4">Gambar 4</option>
+        <option value="image-5">Gambar 5</option>
+        <option value="image-6">Gambar 6</option>
+        <option value="image-7">Gambar 7</option>
+        <option value="image-8">Gambar 8</option>
+        <option value="image-9">Gambar 9</option>
+        <option value="image-10">Gambar 10</option>
+    </select>
+    <br>
+    <img src="picture/irf.png" alt="Image" id="image-wrapper">
+    <script>
+        const selected = document.getElementById('image-select')
+        const img = document.getElementById('image-wrapper')
+        selected.addEventListener("change", function () {
+            img.src = "./picture/" + this.value + '.jfif'          
+            {
+                alert('Klik okey');
+            }
+        })
+    </script>
+</body>
+</html>
